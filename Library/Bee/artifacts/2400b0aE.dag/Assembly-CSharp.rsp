@@ -405,13 +405,17 @@
 "Assets/BarreDeSante.cs"
 "Assets/Billboard.cs"
 "Assets/BulletDamage.cs"
+"Assets/ChangementArgent.cs"
+"Assets/CompteurGlobalArgent.cs"
 "Assets/Destroy.cs"
+"Assets/GestionArgent.cs"
 "Assets/Gravity.cs"
 "Assets/Morsure.cs"
 "Assets/Mouvement.cs"
 "Assets/OnDeath.cs"
 "Assets/Poursuite.cs"
 "Assets/SystemeDeSante.cs"
+"Assets/apparitions.cs"
 -langversion:9.0
 /deterministic
 /optimize+
