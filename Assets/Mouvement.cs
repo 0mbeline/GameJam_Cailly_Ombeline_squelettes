@@ -5,7 +5,6 @@ public class Mouvement : MonoBehaviour {
 
     private const float VELOCITY = 0.03f;
     private const float JUMP_FORCE = 5f;
-    private const float GROUND_DISTANCE = 0.00001f;
 
     private bool jump_is_enable;
 
@@ -17,7 +16,7 @@ public class Mouvement : MonoBehaviour {
 
     bool IsGrounded()
     {
-        return Physics.Raycast(transform.position, -Vector3.up, GROUND_DISTANCE + transform.lossyScale.y) && rb.linearVelocity.y==0;
+        return Mathf.Abs(rb.linearVelocity.y) < 0.0001f;
     }
 
     void Update()
