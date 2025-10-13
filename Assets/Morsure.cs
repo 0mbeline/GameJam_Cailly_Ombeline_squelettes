@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 
 public class Morsure : MonoBehaviour
 {
+    private float date_prochaine_attaque=0;
     void Start()
     {
 
@@ -14,13 +16,34 @@ public class Morsure : MonoBehaviour
     {
 
     }
-    
+
     private void OnCollisionEnter(Collision collision)
     {
+        if (!collision.gameObject.CompareTag("Aggro"))
+        {
+            Morsures(collision);
+        }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (!collision.gameObject.CompareTag("Aggro"))
+        {
+            Morsures(collision);
+        }
+    }
+    
+    private void Morsures(Collision collision)
+    {
+        if (Time.time < date_prochaine_attaque) return;
+
         SystemeDeSante systemedesante = collision.gameObject.GetComponent<SystemeDeSante>();
         if (systemedesante != null)
         {
             systemedesante.TakeDamage(10f);
+            date_prochaine_attaque = Time.time + 0.7f;
         }
+
+
     }
 }

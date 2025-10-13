@@ -408,6 +408,7 @@
 "Assets/ChangementArgent.cs"
 "Assets/CompteurGlobalArgent.cs"
 "Assets/Destroy.cs"
+"Assets/EmettreMechants.cs"
 "Assets/GestionArgent.cs"
 "Assets/Gravity.cs"
 "Assets/Morsure.cs"
