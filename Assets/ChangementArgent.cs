@@ -18,6 +18,6 @@ public class ChangementArgent : MonoBehaviour
 
     void Update()
     {
-        argentTexte.text = "Argent :" + globalargent.GetArgent() + "€";
+        argentTexte.text = "" + globalargent.GetArgent();
     }
 }
