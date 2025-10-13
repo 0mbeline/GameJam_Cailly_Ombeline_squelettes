@@ -38,7 +38,7 @@ public class Morsure : MonoBehaviour
         if (Time.time < date_prochaine_attaque) return;
 
         SystemeDeSante systemedesante = collision.gameObject.GetComponent<SystemeDeSante>();
-        if (systemedesante != null)
+        if (systemedesante != null && collision.gameObject!=null)
         {
             systemedesante.TakeDamage(10f);
             date_prochaine_attaque = Time.time + 0.7f;

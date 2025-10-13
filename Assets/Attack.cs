@@ -29,7 +29,7 @@ public class Attac : MonoBehaviour
         {
             GameObject Bullet = Instantiate(Projectile, Emitter.transform.position, Emitter.transform.rotation);
             Bullet.SetActive(true);
-            Bullet.transform.GetComponent<Rigidbody>().AddForce(-10f * Emitter.transform.forward, ForceMode.Impulse);
+            Bullet.transform.GetComponent<Rigidbody>().AddForce(-50f * Emitter.transform.forward, ForceMode.Impulse);
             yield return new WaitForSeconds(frequency);
         }
     }

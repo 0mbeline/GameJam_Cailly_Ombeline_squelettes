@@ -37,35 +37,43 @@ public class Poursuite : MonoBehaviour
 
     public void SelectBatiment()
     {
-        float min_distance = (float)1e50;
-        foreach (Transform child in batiments.transform)
+        int alea = Random.Range(0, 2);
+        if (alea == 1)
         {
-            SystemeDeSante target = Target.GetComponent<SystemeDeSante>();
-            if (child.gameObject.GetComponent<OnDeath>().maison_detruite || (target!=null && !target.IsDead))
-            {
-                continue;
-            }
-            float distance = (transform.position - child.position).magnitude;
-            if (distance < min_distance)
-            {
-                min_distance = distance;
-                
-                if (target != null)
+
+        }
+        else{
+            float min_distance = (float)1e50;
+                foreach (Transform child in batiments.transform)
                 {
-                    target.OnchangedeSante -= ChangerCible;
+                    SystemeDeSante target = Target.GetComponent<SystemeDeSante>();
+                    if (child.gameObject.GetComponent<OnDeath>().maison_detruite || (target != null && !target.IsDead))
+                    {
+                        continue;
+                    }
+                    float distance = (transform.position - child.position).magnitude;
+                    if (distance < min_distance)
+                    {
+                        min_distance = distance;
+
+                        if (target != null)
+                        {
+                            target.OnchangedeSante -= ChangerCible;
+                        }
+                        Target = child.gameObject;
+                        Target.GetComponent<SystemeDeSante>().OnchangedeSante += ChangerCible;
+                    }
                 }
-                Target = child.gameObject;
-                Target.GetComponent<SystemeDeSante>().OnchangedeSante += ChangerCible;
-            }
         }
     }
-    
+
     public void ChangerCible(float viebatiment)
     {
-        Debug.Log("ChangerCible"+viebatiment);
-        if (viebatiment <= 0)
+        //Debug.Log("ChangerCible"+viebatiment);
+        if (viebatiment <= 0 && this!=null)
         {
             SelectBatiment();
         }
     }
+    
 }

@@ -5,8 +5,9 @@ public class OnDeath : MonoBehaviour
     public SystemeDeSante Sante;
     public Canvas deathCanvas;
 
-    public bool maison_detruite=false;
+    public bool maison_detruite = false;
 
+    public GameObject piece;
     void Start()
     {
         if(Sante != null)
@@ -36,7 +37,7 @@ public class OnDeath : MonoBehaviour
     }
     private void udied()
     {
-        var temps_avant_disparition = 2f;
+        var temps_avant_disparition = 0.2f;
         var rb = GetComponent<Rigidbody>();
         if (rb != null)
         {
@@ -47,15 +48,27 @@ public class OnDeath : MonoBehaviour
         {
             temps_avant_disparition += 3f;
         }
+        int alea = Random.Range(0, 2);
+        Debug.Log(alea);
+        if (alea==1)
+        {
+            Invoke("Apparition", 0f);
+        }
         Destroy(gameObject, temps_avant_disparition);
+        
 
     }
 
+    void Apparition()
+    {
+        Instantiate(piece, transform.position, piece.transform.rotation).SetActive(true);
+    }
+    
     private void displayudied()
     {
-        if(deathCanvas != null)
+        if (deathCanvas != null)
         {
-            deathCanvas.gameObject.SetActive(true);    
+            deathCanvas.gameObject.SetActive(true);
         }
     }
 }
