@@ -3,7 +3,7 @@ using UnityEngine;
 public class Mouvement : MonoBehaviour {
     public Rigidbody rb;
 
-    private const float VELOCITY = 0.03f;
+    private const float VELOCITY = 0.15f;
     private const float JUMP_FORCE = 5f;
 
     private bool jump_is_enable;

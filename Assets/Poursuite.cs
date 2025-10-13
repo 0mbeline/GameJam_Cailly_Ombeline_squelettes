@@ -4,6 +4,8 @@ using UnityEngine;
 public class Poursuite : MonoBehaviour
 {
     public GameObject Target;
+
+    public GameObject Joueur;
     private const float VELOCITY = 0.2f;
 
     public GameObject batiments;
@@ -40,7 +42,7 @@ public class Poursuite : MonoBehaviour
         int alea = Random.Range(0, 2);
         if (alea == 1)
         {
-
+            Target = Joueur;
         }
         else{
             float min_distance = (float)1e50;

@@ -401,6 +401,7 @@
 -analyzer:"/home/ombeline/Unity/Hub/Editor/6000.0.57f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/home/ombeline/Unity/Hub/Editor/6000.0.57f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/home/ombeline/Unity/Hub/Editor/6000.0.57f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/AfficherPieceTexte.cs"
 "Assets/Attack.cs"
 "Assets/BarreDeSante.cs"
 "Assets/Billboard.cs"
