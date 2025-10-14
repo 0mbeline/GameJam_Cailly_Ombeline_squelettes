@@ -6,7 +6,7 @@ public class Poursuite : MonoBehaviour
     public GameObject Target;
 
     public GameObject Joueur;
-    private const float VELOCITY = 0.2f;
+    private const float VELOCITY = 0.1f;
 
     public GameObject batiments;
 
@@ -23,8 +23,9 @@ public class Poursuite : MonoBehaviour
             Vector3 direction = Target.transform.position+vecteur - this.transform.position;
             direction.y = 0;
 
-            transform.position += VELOCITY * direction / direction.magnitude;
-            transform.rotation = Quaternion.LookRotation(direction);
+            //transform.position += VELOCITY * direction / direction.magnitude;
+            transform.Translate(-VELOCITY *Vector3.forward);
+            transform.rotation = Quaternion.LookRotation(-direction);
         }
     }
 
@@ -40,32 +41,38 @@ public class Poursuite : MonoBehaviour
     public void SelectBatiment()
     {
         int alea = Random.Range(0, 3);
-        if (alea == 0)
+        if ((alea == 0)||(batiments.transform.childCount == 0))
         {
             Target = Joueur;
+            vecteur *= 0;
         }
         else{
             float min_distance = (float)1e50;
-                foreach (Transform child in batiments.transform)
+            foreach (Transform child in batiments.transform)
+            {
+                SystemeDeSante target = Target.GetComponent<SystemeDeSante>();
+                if (child.gameObject.GetComponent<OnDeath>().maison_detruite || (target != null && !target.IsDead))
                 {
-                    SystemeDeSante target = Target.GetComponent<SystemeDeSante>();
-                    if (child.gameObject.GetComponent<OnDeath>().maison_detruite || (target != null && !target.IsDead))
-                    {
-                        continue;
-                    }
-                    float distance = (transform.position - child.position).magnitude;
-                    if (distance < min_distance)
-                    {
-                        min_distance = distance;
-
-                        if (target != null)
-                        {
-                            target.OnchangedeSante -= ChangerCible;
-                        }
-                        Target = child.gameObject;
-                        Target.GetComponent<SystemeDeSante>().OnchangedeSante += ChangerCible;
-                    }
+                    continue;
                 }
+                float distance = (transform.position - child.position).magnitude;
+                if (distance < min_distance)
+                {
+                    min_distance = distance;
+
+                    if (target != null)
+                    {
+                        target.OnchangedeSante -= ChangerCible;
+                    }
+                    Target = child.gameObject;
+                    Target.GetComponent<SystemeDeSante>().OnchangedeSante += ChangerCible;
+                }
+            }
+            if (min_distance >= (float)1e49)
+            {
+                Target = Joueur;
+                vecteur *= 0;
+            }
         }
     }
 

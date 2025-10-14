@@ -10,8 +10,21 @@ public class EmettreMechants : MonoBehaviour
         InvokeRepeating("Apparition", 0, delai);
     }
     
+    // void Apparition()
+    // {
+    //     Instantiate(aggro, transform.position, aggro.transform.rotation).SetActive(true);   
+    // }
     void Apparition()
+{
+    if (aggro != null)
     {
-        Instantiate(aggro, transform.position, aggro.transform.rotation).SetActive(true);   
+        GameObject instance = Instantiate(aggro, transform.position, aggro.transform.rotation);
+        instance.SetActive(true);
     }
+    else
+    {
+        Debug.LogWarning("'aggro' non assigné ou détruit !");
+    }
+}
+
 }

@@ -10,6 +10,7 @@ public class OnDeath : MonoBehaviour
     public GameObject piece;
     void Start()
     {
+        
         if(Sante != null)
         {
             Sante.OnchangedeSante += Mort;
@@ -28,7 +29,7 @@ public class OnDeath : MonoBehaviour
             {
                 maison_detruite = true;
                 //GetComponent<BoxCollider>().enabled=false;
-                gameObject.SetActive(false);
+                Destroy(gameObject);
                 return;
             }
             udied();

@@ -58,6 +58,10 @@ public class Mouvement : MonoBehaviour {
     }
 }
 
+
+
+
+
 // using UnityEngine;
 
 // public class Mouvement : MonoBehaviour {
@@ -83,21 +87,21 @@ public class Mouvement : MonoBehaviour {
 //     {
 //         float velocity = Input.GetKey(KeyCode.LeftShift) ? VELOCITY * 2.5f : VELOCITY;
 
-//         if (Input.GetKey(KeyCode.DownArrow))
+//         if (Input.GetKey(KeyCode.DownArrow)&& (!Input.GetKey(KeyCode.LeftArrow) || !Input.GetKey(KeyCode.RightArrow)))
 //         {
 //             if (position != 1)
 //             {
 //                 if (position == 2)
 //                 {
-//                     transform.Rotate(Vector3.up, -4);
+//                     transform.Rotate(Vector3.up, -30);
 //                 }
 //                 else if (position == 3)
 //                 {
-//                     transform.Rotate(Vector3.up, -2);
+//                     transform.Rotate(Vector3.up, -15);
 //                 }
 //                 else if (position == 4)
 //                 {
-//                     transform.Rotate(Vector3.up, 2);
+//                     transform.Rotate(Vector3.up, 15);
 //                 }
 //                 else
 //                 {
@@ -108,21 +112,21 @@ public class Mouvement : MonoBehaviour {
 //             transform.Translate(Vector3.forward * velocity);
 //         }
 
-//         if (Input.GetKey(KeyCode.UpArrow))
+//         if (Input.GetKey(KeyCode.UpArrow) && (!Input.GetKey(KeyCode.LeftArrow) || !Input.GetKey(KeyCode.RightArrow)))
 //         {
 //             if (position != 2)
 //             {
 //                 if (position == 1)
 //                 {
-//                     transform.Rotate(Vector3.up, -4);
+//                     transform.Rotate(Vector3.up, -30);
 //                 }
 //                 else if (position == 3)
 //                 {
-//                     transform.Rotate(Vector3.up, 2);
+//                     transform.Rotate(Vector3.up, 15);
 //                 }
 //                 else if (position == 4)
 //                 {
-//                     transform.Rotate(Vector3.up, -2);
+//                     transform.Rotate(Vector3.up, -15);
 //                 }
 //                 else
 //                 {
@@ -138,15 +142,15 @@ public class Mouvement : MonoBehaviour {
 //             {
 //                 if (position == 1)
 //                 {
-//                     transform.Rotate(Vector3.up, 2);
+//                     transform.Rotate(Vector3.up, 15);
 //                 }
 //                 else if (position == 2)
 //                 {
-//                     transform.Rotate(Vector3.up, -2);
+//                     transform.Rotate(Vector3.up, -15);
 //                 }
 //                 else if (position == 4)
 //                 {
-//                     transform.Rotate(Vector3.up, -4);
+//                     transform.Rotate(Vector3.up, -30);
 //                 }
 //                 else
 //                 {
@@ -155,7 +159,7 @@ public class Mouvement : MonoBehaviour {
 //                 position = 3;
 //             }
 //             transform.Translate(Vector3.forward * velocity);
-//             //transform.Rotate(Vector3.up, -2);
+//             //transform.Rotate(Vector3.up, -15);
 //         }
 
 //         if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.UpArrow))
@@ -164,15 +168,15 @@ public class Mouvement : MonoBehaviour {
 //             {
 //                 if (position == 1)
 //                 {
-//                     transform.Rotate(Vector3.up, -2);
+//                     transform.Rotate(Vector3.up, -15);
 //                 }
 //                 else if (position == 2)
 //                 {
-//                     transform.Rotate(Vector3.up, 2);
+//                     transform.Rotate(Vector3.up, 15);
 //                 }
 //                 else if (position == 3)
 //                 {
-//                     transform.Rotate(Vector3.up, -4);
+//                     transform.Rotate(Vector3.up, -30);
 //                 }
 //                 else
 //                 {
@@ -181,18 +185,18 @@ public class Mouvement : MonoBehaviour {
 //                 position = 4;
 //             }
 //             transform.Translate(Vector3.forward * velocity);
-//             //transform.Rotate(Vector3.up, 2);
+//             //transform.Rotate(Vector3.up, 15);
 //         }
 		
-// 		if (Input.GetKey(KeyCode.LeftArrow))
-//         {
-//             transform.Rotate(Vector3.up, -2);
-//         }
+// 		// if (Input.GetKey(KeyCode.LeftArrow))
+//         // {
+//         //     transform.Rotate(Vector3.up, -15);
+//         // }
 
-//         if (Input.GetKey(KeyCode.RightArrow))
-//         {
-//             transform.Rotate(Vector3.up, 2);
-//         }
+//         // if (Input.GetKey(KeyCode.RightArrow))
+//         // {
+//         //     transform.Rotate(Vector3.up, 15);
+//         // }
         
 //         if (Input.GetKey(KeyCode.Space) && IsGrounded())
 //         {
