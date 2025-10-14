@@ -48,11 +48,14 @@ public class OnDeath : MonoBehaviour
         {
             temps_avant_disparition += 3f;
         }
-        int alea = Random.Range(0, 2);
+        int alea = Random.Range(0, 10);
         Debug.Log(alea);
-        if (alea==1)
+        if (alea%3!=0)
         {
-            Invoke("Apparition", 0f);
+            for (int i = 0; i < alea; i++)
+            {
+                Invoke("Apparition", 0f);
+            }
         }
         Destroy(gameObject, temps_avant_disparition);
         

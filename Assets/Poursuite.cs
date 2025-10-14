@@ -24,7 +24,7 @@ public class Poursuite : MonoBehaviour
             direction.y = 0;
 
             transform.position += VELOCITY * direction / direction.magnitude;
-            transform.rotation = Quaternion.LookRotation(-direction);
+            transform.rotation = Quaternion.LookRotation(direction);
         }
     }
 
@@ -39,8 +39,8 @@ public class Poursuite : MonoBehaviour
 
     public void SelectBatiment()
     {
-        int alea = Random.Range(0, 2);
-        if (alea == 1)
+        int alea = Random.Range(0, 3);
+        if (alea == 0)
         {
             Target = Joueur;
         }
