@@ -51,7 +51,7 @@ public class Poursuite : MonoBehaviour
             foreach (Transform child in batiments.transform)
             {
                 SystemeDeSante target = Target.GetComponent<SystemeDeSante>();
-                if (child.gameObject.GetComponent<OnDeath>().maison_detruite || (target != null && !target.IsDead))
+                if (child.gameObject.GetComponent<OnDeath>().maison_detruite || (target != null && target.IsDead))
                 {
                     continue;
                 }

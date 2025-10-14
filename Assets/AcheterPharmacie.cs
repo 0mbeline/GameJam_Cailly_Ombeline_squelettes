@@ -6,7 +6,7 @@ public class AcheterPharmacie : MonoBehaviour
     public GameObject pharmacie;
     public GameObject compteur;
     private CompteurGlobalArgent globalargent;
-    public bool maison_detruite = true;
+    //public bool maison_detruite = true;
     private int prix = 10;
 
     private int argent;
@@ -26,10 +26,11 @@ public class AcheterPharmacie : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collider)
     {
+        if (pharmacie == null) return;
         Debug.Log("collision");
         if (collider.gameObject.CompareTag("Player") && argent >= prix)
         {
-            maison_detruite = false;
+            pharmacie.GetComponent<OnDeath>().maison_detruite = false;
             pharmacie.SetActive(true);
         }
     }

@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class OnDeath : MonoBehaviour
 {
     public SystemeDeSante Sante;
@@ -47,7 +47,10 @@ public class OnDeath : MonoBehaviour
         }
         if (CompareTag("Player"))
         {
-            temps_avant_disparition += 3f;
+            Debug.Log("Grosse merde");
+            SceneManager.LoadScene("Affichage_fin");
+            //temps_avant_disparition += 3f;
+            return;
         }
         int alea = Random.Range(0, 10);
         Debug.Log(alea);

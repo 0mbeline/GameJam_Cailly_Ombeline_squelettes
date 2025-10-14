@@ -3,12 +3,14 @@ using UnityEngine;
 public class EmettreGelule : MonoBehaviour
 {
     public GameObject gelule;
-    private bool apparue = false;
+    public bool apparue = false;
+
+    private float prochain_gelule;
     public float delai = 20f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("Apparition", 0, delai);
+        Apparition();
         apparue = true;
     }
 
@@ -17,13 +19,15 @@ public class EmettreGelule : MonoBehaviour
     {
         if (apparue == false)
         {
-            InvokeRepeating("Apparition", 0, delai);
+            Apparition();
             apparue = true;
         }
     }
     
     void Apparition()
     {
-        Instantiate(gelule, transform.position, gelule.transform.rotation).SetActive(true);   
+        if (Time.time < prochain_gelule) return;
+        Instantiate(gelule, transform.position, gelule.transform.rotation).SetActive(true);
+        prochain_gelule = Time.time + delai;
     }
 }
