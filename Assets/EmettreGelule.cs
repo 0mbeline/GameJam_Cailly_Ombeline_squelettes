@@ -37,10 +37,10 @@ public class EmettreGelule : MonoBehaviour
 
         }
 
-        while (apparue == true)
-        {
-            transform.Rotate(Vector3.up, -0.1f);
-        }
+        // while (apparue == true)
+        // {
+        //     transform.Rotate(Vector3.up, -0.1f);
+        // }
     }
     
     void Apparition()
