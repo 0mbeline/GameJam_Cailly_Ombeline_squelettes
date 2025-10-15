@@ -6,7 +6,7 @@ public class Poursuite : MonoBehaviour
     public GameObject Target;
 
     public GameObject Joueur;
-    private const float VELOCITY = 0.1f;
+    private const float VELOCITY = 0.2f;
 
     public GameObject batiments;
 

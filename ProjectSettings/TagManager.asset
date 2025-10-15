@@ -9,6 +9,7 @@ TagManager:
   - Aimant
   - Maison
   - Pharmacie
+  - Gobelin
   layers:
   - Default
   - TransparentFX

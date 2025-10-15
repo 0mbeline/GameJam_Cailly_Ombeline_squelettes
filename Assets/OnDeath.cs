@@ -7,6 +7,8 @@ public class OnDeath : MonoBehaviour
 
     public bool maison_detruite = false;
 
+    public GameObject ensemble_pieces;
+
     public GameObject piece;
     void Start()
     {
@@ -47,9 +49,7 @@ public class OnDeath : MonoBehaviour
         }
         if (CompareTag("Player"))
         {
-            Debug.Log("Grosse merde");
             SceneManager.LoadScene("Affichage_fin");
-            //temps_avant_disparition += 3f;
             return;
         }
         int alea = Random.Range(0, 10);
@@ -68,7 +68,13 @@ public class OnDeath : MonoBehaviour
 
     void Apparition()
     {
-        Instantiate(piece, transform.position, piece.transform.rotation).SetActive(true);
+        GameObject nouvelle_piece;
+        nouvelle_piece = Instantiate(piece, transform.position, piece.transform.rotation);
+        nouvelle_piece.SetActive(true);
+        if (ensemble_pieces != null)
+        {
+            nouvelle_piece.transform.SetParent(ensemble_pieces.transform);
+        }
     }
     
     private void displayudied()
