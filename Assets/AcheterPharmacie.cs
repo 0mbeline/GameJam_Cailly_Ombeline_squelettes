@@ -32,6 +32,7 @@ public class AcheterPharmacie : MonoBehaviour
         {
             pharmacie.GetComponent<OnDeath>().maison_detruite = false;
             pharmacie.SetActive(true);
+            Destroy(gameObject);
         }
     }
     
