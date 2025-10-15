@@ -25,12 +25,12 @@ public class Mouvement : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            transform.Translate(Vector3.forward * velocity);
+            transform.Translate(Vector3.back * velocity);
         }
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            transform.Translate(Vector3.back * velocity);
+            transform.Translate(Vector3.forward * velocity);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
