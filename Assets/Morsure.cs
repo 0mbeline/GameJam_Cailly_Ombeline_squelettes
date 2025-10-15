@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 
 
@@ -23,6 +22,7 @@ public class Morsure : MonoBehaviour
         {
             Morsures(collision);
         }
+        
     }
 
     private void OnCollisionStay(Collision collision)
@@ -42,7 +42,14 @@ public class Morsure : MonoBehaviour
         {
             systemedesante.TakeDamage(10f);
             date_prochaine_attaque = Time.time + 1f;
+
+            if (gameObject.name == "Fantome(Clone)")
+        {
+            Debug.Log("verif name");
+            Destroy(gameObject);
         }
+        }
+        
 
 
     }

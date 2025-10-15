@@ -414,6 +414,7 @@
 "Assets/EmettreMechants.cs"
 "Assets/GestionArgent.cs"
 "Assets/GestionGelule.cs"
+"Assets/GhostCharacter_Free/Scripts/GhostScript.cs"
 "Assets/Gravity.cs"
 "Assets/Mini Simple Characters Skeleton Demo/Readme/Scripts/Readme.cs"
 "Assets/Morsure.cs"
