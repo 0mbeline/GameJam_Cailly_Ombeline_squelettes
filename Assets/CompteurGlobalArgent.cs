@@ -6,7 +6,7 @@ public class CompteurGlobalArgent : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -14,13 +14,18 @@ public class CompteurGlobalArgent : MonoBehaviour
     {
 
     }
-    
+
     public void AjoutArgent(int valeur)
     {
         argent += valeur;
     }
     public int GetArgent()
-{
-    return argent;
-}
+    {
+        return argent;
+    }
+
+    public void RetirerArgent(int valeur)
+    {
+        argent -= valeur;
+    }
 }

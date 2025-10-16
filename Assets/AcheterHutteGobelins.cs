@@ -29,6 +29,7 @@ public class AcheterHutteGobelins : MonoBehaviour
         Debug.Log("collision");
         if (collider.gameObject.CompareTag("Player") && argent >= prix)
         {
+            globalargent.RetirerArgent(prix);
             hutte.GetComponent<OnDeath>().maison_detruite = false;
             hutte.SetActive(true);
             Destroy(gameObject);

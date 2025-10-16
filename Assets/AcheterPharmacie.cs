@@ -30,6 +30,7 @@ public class AcheterPharmacie : MonoBehaviour
         Debug.Log("collision");
         if (collider.gameObject.CompareTag("Player") && argent >= prix)
         {
+            globalargent.RetirerArgent(prix);
             pharmacie.GetComponent<OnDeath>().maison_detruite = false;
             pharmacie.SetActive(true);
             Destroy(gameObject);

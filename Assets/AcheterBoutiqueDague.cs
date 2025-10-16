@@ -29,6 +29,7 @@ public class AcheterBoutiqueDague : MonoBehaviour
         Debug.Log("collision");
         if (collider.gameObject.CompareTag("Player") && argent >= prix)
         {
+            globalargent.RetirerArgent(prix);
             boutique.GetComponent<OnDeath>().maison_detruite = false;
             boutique.SetActive(true);
             Destroy(gameObject);

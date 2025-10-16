@@ -5,9 +5,6 @@ public class EmettreGobelin : MonoBehaviour
     public GameObject gobelin;
     public GameObject hutte;
     public bool apparue = false;
-    private float prochain_gobelin = 0f;
-
-    // private bool premiere_apparition = true;
     private float delai = 5f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
