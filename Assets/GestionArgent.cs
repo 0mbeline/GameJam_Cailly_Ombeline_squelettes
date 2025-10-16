@@ -20,7 +20,7 @@ public class GestionArgent : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player")||collision.gameObject.CompareTag("Gobelin"))
         {
-            int valeur = 10;
+            int valeur = 30;
             Debug.Log($"{valeur}€ gagnés ! ");
             globalargent.AjoutArgent(valeur);
             Destroy(gameObject);
