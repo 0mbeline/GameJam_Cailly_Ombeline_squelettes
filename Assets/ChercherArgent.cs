@@ -5,7 +5,7 @@ public class ChercherArgent : MonoBehaviour
     public GameObject ensemble_pieces;
     private GameObject Target;
 
-    public float VELOCITY = 3f;
+    public float VELOCITY;
     void Start()
     {
         

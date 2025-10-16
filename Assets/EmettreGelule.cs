@@ -8,7 +8,7 @@ public class EmettreGelule : MonoBehaviour
     private float prochain_gelule = 0f;
 
     private bool premiere_apparition = true;
-    public float delai = 2f;
+    public float delai;
 
     void Start()
     {

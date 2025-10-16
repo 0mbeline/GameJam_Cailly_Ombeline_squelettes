@@ -6,7 +6,7 @@ public class Attac : MonoBehaviour
     public GameObject Projectile;
     public Transform Emitter;
     public float frequency;
-    public int Number;
+    private int Number = 1;
 
     void Start()
     {

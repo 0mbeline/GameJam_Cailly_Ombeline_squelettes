@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CompteurGlobalArgent : MonoBehaviour
 {
-    [SerializeField] private int argent = 10;
+    [SerializeField] private int argent;
     void Start()
     {
 

@@ -4,7 +4,7 @@ public class SystemeDeSante : MonoBehaviour
 {
     public event System.Action<float> OnchangedeSante;
 
-    [SerializeField] private float maxSante = 100f;
+    [SerializeField] private float maxSante;
     [SerializeField] private float actuelleSante;
 
     public float MaxSante

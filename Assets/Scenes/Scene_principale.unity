@@ -4548,7 +4548,6 @@ MonoBehaviour:
   Projectile: {fileID: 1214340336}
   Emitter: {fileID: 941451616}
   frequency: 0
-  Number: 1
 --- !u!114 &744184257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9557,6 +9556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joueur: {fileID: 744184255}
   emeteurDague: {fileID: 2059967183}
+  boutique: {fileID: 388349760}
 --- !u!136 &1755324504
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12591,11 +12591,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6811616168335437652, guid: c9ce26173bb2c11ca8b5510e337938c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.55
       objectReference: {fileID: 0}
     - target: {fileID: 6811616168335437652, guid: c9ce26173bb2c11ca8b5510e337938c0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.9
+      value: -10.44
       objectReference: {fileID: 0}
     - target: {fileID: 6811616168335437652, guid: c9ce26173bb2c11ca8b5510e337938c0, type: 3}
       propertyPath: m_LocalRotation.w
