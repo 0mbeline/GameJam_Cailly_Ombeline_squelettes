@@ -46,11 +46,6 @@ public class SystemeDeSante : MonoBehaviour
         {
             OnchangedeSante(ObtenirSanteNormalisee());
         }
-
-        if (actuelleSante <= 0)
-        {
-            Debug.Log($"{gameObject.name} est mort!");
-        }
     }
 
     public void Heal(float amount)

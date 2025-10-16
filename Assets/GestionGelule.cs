@@ -4,6 +4,8 @@ public class GestionGelule : MonoBehaviour
 {
     public GameObject joueur;
     public GameObject emmeteurgelule;
+
+    public GameObject pharmacie;
     private SystemeDeSante sante_joueur;
     void Start()
     {
@@ -12,7 +14,6 @@ public class GestionGelule : MonoBehaviour
 
     void Update()
     {
-
     }
 
     void OnCollisionEnter(Collision collision)
@@ -20,9 +21,11 @@ public class GestionGelule : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             int valeur = 20;
-            Debug.Log("gelule gagnés ! ");
+            Debug.Log("gelule gagnée ! ");
             sante_joueur.Heal(valeur);
-            emmeteurgelule.GetComponent<EmettreGelule>().apparue = false;
+            if (pharmacie!=null) {
+                emmeteurgelule.GetComponent<EmettreGelule>().apparue = false;
+            }
             Destroy(gameObject);
         }
     }

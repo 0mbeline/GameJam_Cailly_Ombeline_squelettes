@@ -10202,6 +10202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joueur: {fileID: 744184255}
   emmeteurgelule: {fileID: 307366524}
+  pharmacie: {fileID: 1239720181}
 --- !u!136 &1887380119
 CapsuleCollider:
   m_ObjectHideFlags: 0

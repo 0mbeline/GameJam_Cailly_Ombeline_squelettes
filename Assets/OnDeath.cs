@@ -52,7 +52,6 @@ public class OnDeath : MonoBehaviour
             return;
         }
         int alea = Random.Range(0, 10);
-        Debug.Log(alea);
         if (alea%3!=0)
         {
             for (int i = 0; i < alea; i++)

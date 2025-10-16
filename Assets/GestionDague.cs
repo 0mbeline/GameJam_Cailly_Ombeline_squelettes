@@ -5,6 +5,8 @@ public class GestionDague : MonoBehaviour
     public GameObject joueur;
     public GameObject emeteurDague;
     private Attac attaque;
+
+    public GameObject boutique;
     void Start()
     {
         attaque = joueur.GetComponent<Attac>();
@@ -21,7 +23,10 @@ public class GestionDague : MonoBehaviour
         {
             Debug.Log("épée gagnée ! ");
             attaque.ajouterNumber(1);
-            emeteurDague.GetComponent<EmettreDague>().apparue = false;
+            if (boutique != null)
+            {
+                emeteurDague.GetComponent<EmettreDague>().apparue = false;
+            }
             Destroy(gameObject);
         }
     }
