@@ -23,7 +23,6 @@ public class Poursuite : MonoBehaviour
             Vector3 direction = Target.transform.position+vecteur - this.transform.position;
             direction.y = 0;
 
-            //transform.position += VELOCITY * direction / direction.magnitude;
             transform.Translate(-VELOCITY *Vector3.forward);
             transform.rotation = Quaternion.LookRotation(-direction);
         }
@@ -33,7 +32,6 @@ public class Poursuite : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Aimant"))
         {
-            //Debug.Log("Aimant touché");
             SelectBatiment();
         }
     }
@@ -78,7 +76,6 @@ public class Poursuite : MonoBehaviour
 
     public void ChangerCible(float viebatiment)
     {
-        //Debug.Log("ChangerCible"+viebatiment);
         if (viebatiment <= 0 && this!=null)
         {
             SelectBatiment();

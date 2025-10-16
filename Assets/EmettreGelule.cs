@@ -10,12 +10,10 @@ public class EmettreGelule : MonoBehaviour
     private bool premiere_apparition = true;
     public float delai = 2f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (apparue == false && pharmacie.GetComponent<OnDeath>().maison_detruite == false)
@@ -37,10 +35,6 @@ public class EmettreGelule : MonoBehaviour
 
         }
 
-        // while (apparue == true)
-        // {
-        //     transform.Rotate(Vector3.up, -0.1f);
-        // }
     }
     
     void Apparition()

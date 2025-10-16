@@ -10,12 +10,10 @@ public class EmettreDague : MonoBehaviour
     private bool premiere_apparition = true;
     private float delai = 30f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (apparue == false && boutique.GetComponent<OnDeath>().maison_detruite == false)
@@ -36,11 +34,6 @@ public class EmettreDague : MonoBehaviour
             }
 
         }
-
-        // while (apparue == true)
-        // {
-        //     transform.Rotate(Vector3.up, -0.1f);
-        // }
     }
     
     void Apparition()

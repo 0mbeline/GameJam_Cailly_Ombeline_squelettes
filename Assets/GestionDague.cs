@@ -5,13 +5,11 @@ public class GestionDague : MonoBehaviour
     public GameObject joueur;
     public GameObject emeteurDague;
     private Attac attaque;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         attaque = joueur.GetComponent<Attac>();
     }
 
-    // Update is called once per frame
     void Update()
     {
 

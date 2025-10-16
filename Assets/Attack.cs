@@ -15,7 +15,6 @@ public class Attac : MonoBehaviour
 
     void Update()
     {
-        //Debug.DrawLine(Emitter.position, Vector, Color.red);
         
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
