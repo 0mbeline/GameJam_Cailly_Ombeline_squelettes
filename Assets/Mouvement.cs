@@ -35,12 +35,12 @@ public class Mouvement : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Rotate(Vector3.up, -2);
+            transform.Rotate(Vector3.up, -1);
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Rotate(Vector3.up, 2);
+            transform.Rotate(Vector3.up, 1);
         }
 
         if (Input.GetKey(KeyCode.Space) && IsGrounded())
