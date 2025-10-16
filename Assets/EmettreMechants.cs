@@ -4,14 +4,20 @@ public class EmettreMechants : MonoBehaviour
 {
     public GameObject aggro;
     public GameObject fantome;
-    public float delai;
+    private float delai = 2f;
+    private int nombre_ennemis_sortis=0;
     void Start()
     {
         InvokeRepeating("Apparition", 0, delai);
     }
     
     void Apparition()
-{
+    {
+        if (nombre_ennemis_sortis > 10)
+        {
+            delai *= 0.7f;
+        }
+        nombre_ennemis_sortis++;
     if (aggro != null)
         {
             int alea = Random.Range(0, 5);

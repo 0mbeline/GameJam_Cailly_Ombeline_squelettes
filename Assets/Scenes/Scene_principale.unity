@@ -807,7 +807,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aggro: {fileID: 709276577}
   fantome: {fileID: 720895660}
-  delai: 1
 --- !u!4 &103644526
 Transform:
   m_ObjectHideFlags: 0
@@ -4579,8 +4578,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d5ef6898af4d7beb32647fad838bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSante: 100
-  actuelleSante: 100
+  maxSante: 200
+  actuelleSante: 200
 --- !u!114 &744184259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7592,8 +7591,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 15.389102, y: 13.483933, z: 9.4824295}
-  m_Center: {x: -0.08250654, y: -0.758037, z: -0.005149396}
+  m_Size: {x: 15.389102, y: 13.483933, z: 10.100213}
+  m_Center: {x: -0.08250654, y: -0.758037, z: -0.31404078}
 --- !u!114 &1299318929
 MonoBehaviour:
   m_ObjectHideFlags: 0

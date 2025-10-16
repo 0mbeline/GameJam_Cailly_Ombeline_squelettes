@@ -26,8 +26,14 @@ public class EmettreGobelin : MonoBehaviour
         Instantiate(gobelin, transform.position, gobelin.transform.rotation).SetActive(true);
         Invoke("Apparition2", delai);
     }
-    
+
     void Apparition2()
+    {
+        Instantiate(gobelin, transform.position, gobelin.transform.rotation).SetActive(true);
+        Invoke("Apparition3", delai);
+    }
+    
+    void Apparition3()
     {
         Instantiate(gobelin, transform.position, gobelin.transform.rotation).SetActive(true);
     }

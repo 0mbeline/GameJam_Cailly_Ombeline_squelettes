@@ -30,7 +30,6 @@ public class OnDeath : MonoBehaviour
             if (CompareTag("Maison")||CompareTag("Pharmacie"))
             {
                 maison_detruite = true;
-                //GetComponent<BoxCollider>().enabled=false;
                 Destroy(gameObject);
                 return;
             }
