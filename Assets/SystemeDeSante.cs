@@ -4,7 +4,7 @@ public class SystemeDeSante : MonoBehaviour
 {
     public event System.Action<float> OnchangedeSante;
 
-    [SerializeField] private float maxSante = 100f;
+    [SerializeField] private float maxSante;
     [SerializeField] private float actuelleSante;
 
     public float MaxSante
@@ -45,11 +45,6 @@ public class SystemeDeSante : MonoBehaviour
         if (OnchangedeSante != null)
         {
             OnchangedeSante(ObtenirSanteNormalisee());
-        }
-
-        if (actuelleSante <= 0)
-        {
-            Debug.Log($"{gameObject.name} est mort!");
         }
     }
 

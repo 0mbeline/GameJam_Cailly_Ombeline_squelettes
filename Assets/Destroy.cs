@@ -14,6 +14,10 @@ public class Destroy : MonoBehaviour
 
     void Update()
     {
+        if (gameObject.transform.position.y < 0.3)
+        {
+            Destroy(gameObject);
+        }
         if (Timer > 0)
         {
             Timer -= Time.deltaTime;

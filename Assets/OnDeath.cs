@@ -1,44 +1,85 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class OnDeath : MonoBehaviour
 {
     public SystemeDeSante Sante;
     public Canvas deathCanvas;
 
+    public bool maison_detruite = false;
+
+    public GameObject ensemble_pieces;
+
+    public GameObject piece;
     void Start()
     {
         
+        if(Sante != null)
+        {
+            Sante.OnchangedeSante += Mort;
+        }
     }
 
-    void Update()
+    private void Mort(float vie)
     {
+        if (vie > 0)
+        {
+            return;
+        }
         if (Sante != null && Sante.IsDead)
         {
+            if (CompareTag("Maison")||CompareTag("Pharmacie"))
+            {
+                maison_detruite = true;
+                Destroy(gameObject);
+                return;
+            }
             udied();
             displayudied();
         }
     }
-
     private void udied()
     {
-        var temps_avant_disparition = 2f;
+        var temps_avant_disparition = 0.2f;
         var rb = GetComponent<Rigidbody>();
         if (rb != null)
         {
             rb.isKinematic = false;
             rb.constraints = RigidbodyConstraints.None;
         }
-        if(CompareTag("Player")){
-            temps_avant_disparition += 3f;
+        if (CompareTag("Player"))
+        {
+            SceneManager.LoadScene("Affichage_fin");
+            return;
+        }
+        int alea = Random.Range(0, 10);
+        if (alea%3!=0)
+        {
+            for (int i = 0; i < alea; i++)
+            {
+                Invoke("Apparition", 0f);
+            }
         }
         Destroy(gameObject, temps_avant_disparition);
+        
+
     }
 
+    void Apparition()
+    {
+        GameObject nouvelle_piece;
+        nouvelle_piece = Instantiate(piece, transform.position, piece.transform.rotation);
+        nouvelle_piece.SetActive(true);
+        if (ensemble_pieces != null)
+        {
+            nouvelle_piece.transform.SetParent(ensemble_pieces.transform);
+        }
+    }
+    
     private void displayudied()
     {
-        if(deathCanvas != null)
+        if (deathCanvas != null)
         {
-            deathCanvas.gameObject.SetActive(true);    
+            deathCanvas.gameObject.SetActive(true);
         }
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Morsure : MonoBehaviour
 {
+    private float date_prochaine_attaque=0;
     void Start()
     {
 
@@ -14,13 +15,43 @@ public class Morsure : MonoBehaviour
     {
 
     }
-    
+
     private void OnCollisionEnter(Collision collision)
     {
-        SystemeDeSante systemedesante = collision.gameObject.GetComponent<SystemeDeSante>();
-        if (systemedesante != null)
+        if (!collision.gameObject.CompareTag("Aggro"))
         {
-            systemedesante.TakeDamage(10f);
+            Morsures(collision);
+        }
+        
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (!collision.gameObject.CompareTag("Aggro"))
+        {
+            Morsures(collision);
         }
     }
+
+    private void Morsures(Collision collision)
+    {
+        if (Time.time < date_prochaine_attaque) return;
+
+        SystemeDeSante systemedesante = collision.gameObject.GetComponent<SystemeDeSante>();
+        if (systemedesante != null && collision.gameObject != null)
+        {
+            systemedesante.TakeDamage(10f);
+            date_prochaine_attaque = Time.time + 1f;
+
+            if (gameObject.name == "Fantome(Clone)")
+        {
+            Debug.Log("verif name");
+            Destroy(gameObject);
+        }
+        }
+        
+
+
+    }
+    
 }
