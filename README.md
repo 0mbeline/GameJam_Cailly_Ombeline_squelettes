@@ -44,9 +44,13 @@ See releases to play. You can simply start the executable.
 
 #### Commands : 
 go ahead / go back : arrows up and down
+
 turn right/letf : arrows right/left
+
 Ctrl : shot
+
 Space : jump
+
 F : change focus (general view or knight view)
 
 ## Roadmap
