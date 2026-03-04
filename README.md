@@ -13,15 +13,15 @@ From Unity Asset Store*
 
 ![Image hutte et gobelins](images_readme/fantome.png)
 
-###### Character asset: Ghost Character Free
-###### Author: Sigmoid Button Assets
-###### From Unity Asset Store
+*Character asset: Ghost Character Free
+Author: Sigmoid Button Assets
+From Unity Asset Store*
 
 
 ![Image hutte et gobelins](images_readme/squelette.png)
-###### Character asset: Mini Simple Characters – Skeleton (Free Demo)
-###### Author: João Baltieri
-###### From Unity Asset Store
+*Character asset: Mini Simple Characters – Skeleton (Free Demo)
+ Author: João Baltieri
+From Unity Asset Store*
 
 
 For now, there is the goblins' hut. Goblins are allies who go collect for you gold (for buy buildings).
@@ -29,9 +29,9 @@ For now, there is the goblins' hut. Goblins are allies who go collect for you go
 
 ![Image hutte et gobelins](images_readme/hutte_gobelin.png)
 
-###### Character asset: Goblin01
-###### Author: DancingEyebrows
-###### From Unity Asset Store
+*Character asset: Goblin01
+Author: DancingEyebrows
+From Unity Asset Store*
 
 There are a pharmacy and a daggers' shop that give you pills (XP) and daggers (for better shots).
 
