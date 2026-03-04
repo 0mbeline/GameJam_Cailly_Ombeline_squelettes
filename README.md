@@ -6,14 +6,19 @@ You are a knight that fight death creatures (skeletons and ghosts). You have to 
 
 ![Image Chevalier et maison](images_readme/chevalier_maison.png)
 
-Character asset: Toony Tiny RTS Package (Demo)
-Author: Polygon Blacksmith
-From Unity Asset Store
+#### Character asset: Toony Tiny RTS Package (Demo)
+#### Author: Polygon Blacksmith
+#### From Unity Asset Store
+
+
+![Image hutte et gobelins](images_readme/fantome.png)
 
 Character asset: Ghost Character Free
 Author: Sigmoid Button Assets
 From Unity Asset Store
 
+
+![Image hutte et gobelins](images_readme/squelette.png)
 Character asset: Mini Simple Characters – Skeleton (Free Demo)
 Author: João Baltieri
 From Unity Asset Store
