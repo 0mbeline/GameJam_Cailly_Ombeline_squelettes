@@ -50,6 +50,8 @@ turn right/left : arrows right/left
 Ctrl : throw a dagger
 --> maybe a problem with macOS because Ctrl + arrow right/left will change your desk. I plan to fix this.
 
+speed up : Shift
+
 Space : jump
 
 F : change focus (general view or knight view)
