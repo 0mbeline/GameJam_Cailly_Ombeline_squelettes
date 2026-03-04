@@ -2,41 +2,11 @@
 
 
 ## Description
-You are a knight that fight death creatures (skeletons and ghosts). You have to protect your house and you can build different buildings that give you bonus
+You are a knight that fight death creatures (skeletons and ghosts). You have to protect your house and you can build different buildings that give you bonus like XP.
 
-![Image Chevalier et maison](images_readme/chevalier_maison.png)
-
-Character asset: Toony Tiny RTS Package (Demo)
-Author: Polygon Blacksmith
-From Unity Asset Store
-
-Character asset: Ghost Character Free
-Author: Sigmoid Button Assets
-From Unity Asset Store
-
-Character asset: Mini Simple Characters – Skeleton (Free Demo)
-Author: João Baltieri
-From Unity Asset Store
-
-
-For now, there is the goblins' hut. Goblins are allies who go collect for you gold (for buy buildings).
-
-
-![Image hutte et gobelins](images_readme/hutte_gobelin.png)
-
-Character asset: Goblin01
-Author: DancingEyebrows
-From Unity Asset Store
-
-There are a pharmacy and a daggers' shop that give you pills (XP) and daggers (for better shots).
-
-![Image hutte et gobelins](images_readme/batiments.png)
-
-
-
-
-
-## Comment lancer 
+##Comment lancer 
+## Visuals
+Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
 ## Installation
 Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
