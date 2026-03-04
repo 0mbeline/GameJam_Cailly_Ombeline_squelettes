@@ -6,6 +6,7 @@ You are a knight that fight death creatures (skeletons and ghosts). You have to 
 
 ##Comment lancer 
 ## Visuals
+![Image Chevalier](images_readme/chevalier.png)
 Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
 ## Installation
