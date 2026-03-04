@@ -2,7 +2,7 @@
 
 
 ## Description
-You are a knight that fight death creatures (skeletons and ghosts). You have to protect your house and you can build different
+You are a knight that fight death creatures (skeletons and ghosts). You have to protect your house and you can build different buildings that give you bonus like XP.
 
 ##Comment lancer 
 ## Visuals
