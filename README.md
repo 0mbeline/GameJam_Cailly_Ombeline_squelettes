@@ -2,7 +2,7 @@
 
 
 ## Description
-You are a knight that fight death creatures (skeletons and ghosts). You have to protect your house and you can build different buildings that give you bonus
+You are a knight who fights undead creatures (skeletons and ghosts). You have to protect your house and you can build different buildings that give you bonuses.
 
 ![Image Chevalier et maison](images_readme/chevalier_maison.png)
 
@@ -25,7 +25,7 @@ From Unity Asset Store*
 From Unity Asset Store*
 
 
-For now, there is the goblins' hut. Goblins are allies who go collect for you gold (for buy buildings).
+For now, there is the goblins' hut. Goblins are allies who collect gold for you (to buy buildings).
 
 
 ![Image hutte et gobelins](images_readme/hutte_gobelin.png)
@@ -34,20 +34,21 @@ For now, there is the goblins' hut. Goblins are allies who go collect for you go
 Author: DancingEyebrows
 From Unity Asset Store*
 
-There are a pharmacy and a daggers' shop that give you pills (XP) and daggers (for better shots).
+There are a pharmacy and a dagger shop that give you pills (XP) and daggers (for better shots).
 
 ![Image hutte et gobelins](images_readme/batiments.png)
 
 
-## How play
-See releases to play. You can simply start the executable.
+## How to play
+See releases to play. You can simply download the .zip, open your architecture's directory and start the executable.
 
 #### Commands : 
 go ahead / go back : arrows up and down
 
-turn right/letf : arrows right/left
+turn right/left : arrows right/left
 
-Ctrl : shot
+Ctrl : throw a dagger
+--> maybe a problem with macos because Ctrl + arrow right/left will change your desk. I plan to fix this.
 
 Space : jump
 
@@ -55,10 +56,10 @@ F : change focus (general view or knight view)
 
 ## Roadmap
 I would like to add the possibility to fix the buildings when they are destroyed.
-It would be interesting to have differents levels.
-Of course, add others monsters and buildings.
+It would be interesting to have different levels.
+Of course, add others types of monsters and buildings.
 
 ## Credits
 This small game was developed with Unity for a lab exam in my Bachelor's Degree in Computer Science.
-I had to create a game inspired by a fake game add demo. I choose King shot.
+I had to create a game inspired by a fake game advertisement demo. I chose King shot.
 The project was assigned as part of the MAIN501 module, coordinated by Dr. Jessica Jonquet, with lab sessions led by Mr. Hua Wong.
