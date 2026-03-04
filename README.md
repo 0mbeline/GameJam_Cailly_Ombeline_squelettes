@@ -60,6 +60,7 @@ F : change focus (general view or knight view)
 I would like to add the possibility to fix the buildings when they are destroyed.
 It would be interesting to have different levels.
 Of course, add other types of monsters and buildings.
+Manage the exit. Currently, we can exit of the general camera, and even fall of the map.
 
 ## Credits
 This small game was developed with Unity for a lab exam in my Bachelor's Degree in Computer Science.
