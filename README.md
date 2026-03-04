@@ -19,6 +19,7 @@ From Unity Asset Store*
 
 
 ![Image hutte et gobelins](images_readme/squelette.png)
+
 *Character asset: Mini Simple Characters – Skeleton (Free Demo)
  Author: João Baltieri
 From Unity Asset Store*
@@ -38,13 +39,14 @@ There are a pharmacy and a daggers' shop that give you pills (XP) and daggers (f
 ![Image hutte et gobelins](images_readme/batiments.png)
 
 
-
-
-
-## Comment lancer 
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+## How play
+I made a directory with different distribution (for now, works only with Linux). You can simply start the executable.
+### Commands : 
+go ahead / go back : arrows up and down
+turn right/letf : arrows right/left
+Ctrl : shot
+Space : jump
+F : change focus (general view or knight view)
 
 ## Roadmap
 I would like to add the possibility to fix the buildings when they are destroyed.
