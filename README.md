@@ -42,7 +42,7 @@ There are a pharmacy and a daggers' shop that give you pills (XP) and daggers (f
 ## How play
 See releases to play. You can simply start the executable.
 
-### Commands : 
+#### Commands : 
 go ahead / go back : arrows up and down
 turn right/letf : arrows right/left
 Ctrl : shot
