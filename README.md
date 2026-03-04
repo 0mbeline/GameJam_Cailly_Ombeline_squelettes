@@ -40,7 +40,8 @@ There are a pharmacy and a daggers' shop that give you pills (XP) and daggers (f
 
 
 ## How play
-I made a directory with different distribution (for now, works only with Linux). You can simply start the executable.
+See releases to play. You can simply start the executable.
+
 ### Commands : 
 go ahead / go back : arrows up and down
 turn right/letf : arrows right/left
