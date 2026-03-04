@@ -7,6 +7,7 @@ You are a knight that fight death creatures (skeletons and ghosts). You have to 
 ##Comment lancer 
 ## Visuals
 ![Image Chevalier](images_readme/chevalier.png)
+
 Character asset: Toony Tiny RTS Package (Demo)
 Author: Polygon Blacksmith
 From Unity Asset Store
